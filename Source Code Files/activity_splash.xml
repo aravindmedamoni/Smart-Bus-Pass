@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Splash">
+    
+<ImageView
+    android:layout_marginTop="20dp"
+    android:layout_width="163dp"
+    android:layout_gravity="center"
+    android:id="@+id/img"
+    android:src="@drawable/govt"
+    android:layout_height="198dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="90dp"
+        android:textSize="25dp"
+        android:textColor="#FF2ECA72"
+        android:text="Smart Bus Pass"
+        android:layout_height="wrap_content" />
+</LinearLayout>
