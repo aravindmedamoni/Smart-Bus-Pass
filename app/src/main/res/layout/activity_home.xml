@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/smartpassicon"
+            android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="FreshBusPass"
+            android:onClick="openWebPage1"
+            android:background="@drawable/login_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textColor="#FAD02E"
+            android:textAllCaps="false"
+            android:layout_height="60dp" />
+        <Button
+            android:textAllCaps="false"
+            android:onClick="renew"
+            android:text="Renewal"
+            android:textSize="24dp"
+            android:textColor="#FAD02E"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/login_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="35dp"
+        android:text="Student Services:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#40C3FF"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:text="Update details"
+        android:textColor="#191970"
+        android:textStyle="bold"
+        android:onClick="updatedetails"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:layout_height="55dp"
+        android:background="@drawable/update_btn"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="openWebPage"
+        android:layout_width="350dp"
+        android:background="@drawable/track_btn"
+        android:textColor="#019031"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="Track application"
+        android:layout_height="55dp" />
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:textColor="#2C3335"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Print application"
+        android:onClick="openWebPage2"
+        android:background="@drawable/print_btn"
+        android:fontFamily="sans-serif"
+        android:layout_height="55dp" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

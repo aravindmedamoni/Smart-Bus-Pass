@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/rgstrimagevw"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tsrtc"
+            android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/rname"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:hint="Enter username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/rmail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter mail id"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:id="@+id/rmob"
+                android:hint="enter mobile no."
+                android:inputType="number"
+                android:maxLength="12"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/rpass"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/rcpass"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/registrbtn"
+                android:layout_marginTop="20dp"
+                android:layout_width="340dp"
+                android:text="Register"
+                android:textSize="25dp"
+                android:onClick="onregister"
+                android:textColor="#FAD02E"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:background="@drawable/login_button"
+                android:layout_height="50dp"
+                android:layout_marginBottom="28dp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
